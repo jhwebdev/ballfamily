@@ -1,0 +1,434 @@
+* {
+	box-sizing: border-box;
+}
+
+#header_box{
+	border-radius: 25px;
+	background: #8FBC96;
+    border: 2px solid #4152CE;
+    width: 15%;
+	height: 150px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 5%;
+	text-align: center;
+	grid-area: header;
+}
+
+.topnav {
+  overflow: hidden;
+  text-align: center;
+  background: url("media/gradient.jpg"); 
+  border: 2px solid black;
+  width: 90%;
+  margin: 0 auto;
+  grid-area: nav;
+}
+
+.topnav a {
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 1% 1%;
+}
+
+.topnav a:hover {
+	color: white;
+	background-color: #95b0db;
+}
+
+.topnav .icon {
+  display: none;
+}
+		
+body{
+	background-color: #BDC197;
+}
+
+
+#p {
+	background: #D0D1C5;
+	padding: 15px 38px 10px 20px;
+	width: 45%;
+	height: 65%;
+	margin-top: 8.5%;
+	margin-left: 5%;
+	position: relative;
+	float: left;
+	display: block;
+}
+
+a:hover {
+	color: #C5AD74;
+}
+
+a {
+	color: #5779c6;
+	text-decoration: none;
+}
+
+.footer	 {
+	padding: 0.01%;
+	color: white;
+	font-size: 95%;
+	font-weight: bold;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #555;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	grid-area: footer;
+}
+
+img {
+	width: 80%;
+	height: 70%;
+	margin-right: 3%;
+	margin-top: 7%;
+	
+}
+
+.carousel {
+    position: relative;
+    margin-top: 3%;
+	margin-left: 5%;
+	width: 40%;
+	float: right;
+	display: inline-block;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+	width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+    color: #428bca;
+}
+
+.container {
+	background: #D0D1C5;
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 665px;
+	border: 3px solid black;
+	grid-area: content;
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	background: #9eb4d8;
+	border-left: 2px dashed #003893;
+	border-right: 2px dashed #003893;
+	margin-right: 5%;
+	width: 20%;
+	height: 100%;
+	font-size: 20px;
+}
+.laRow{
+	display:none;
+	
+}
+	
+.houdini {
+	margin-left: 4%;
+	margin-top: 2%;
+	background: #D0D1C5;
+	width: 60%;
+	height: 87%;
+	font-size: 27px;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+}
+	
+.gonegirl {
+	display:none;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 80%;
+	height: 30%;
+	margin-left: 10%;
+}
+
+iframe {
+	display: block;
+	margin-right: 0.20%;
+	margin-top: 7%;
+	margin-right: 4%;
+	border: 5px solid black;
+}
+
+.structure {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"header"
+	"nav"
+	"content"
+	"footer";
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: #d66262;
+	color: white;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #d66262;
+	color: white;
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+	from {top: -300px; opacity: 0}
+	to {top: 0px; opacity: 1}
+}
+
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+	#header_box {
+		width: 90%;
+	}
+	
+	#p {
+		font-size: 6vw;
+		display: block;
+		width: 90%;
+	}
+	
+	iframe {
+		display: block;
+		width: 100%;
+	}
+
+	.carousel {
+		display: block;
+		width: 90%;
+		position: relative;
+	}
+	
+	.column {
+		display:none;
+	}
+	
+	.container {
+		flex-flow: column nowrap;
+		grid-area: content;
+		height:auto;
+		position: relative;
+	}
+	
+	.laRow {
+		display:flex;
+		flex-direction: column;
+		background: #D0D1C5;
+		font-size: 15pt;
+		border-bottom: 1px solid #c0c1b4;
+	}
+	
+	.houdini {
+		display:none;
+	}
+	
+	.gonegirl {
+		display:flex;
+		border-bottom: 1px solid #c0c1b4;
+		padding: 10px;
+		background: #D0D1C5;
+		font-size:14pt;
+		font-family: 'Dosis', sans-serif; 
+	}
+	
+	.topnav a:not(:first-child) {display: none;}
+  
+	.topnav a.icon {
+		display: block;
+		float: right;
+	}
+	
+	.topnav.responsive {position: relative;}
+	
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.topnav {
+		overflow: hidden;
+		background: url("media/gradient.jpg"); 
+		border: 2px solid black;
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		grid-area: nav;
+	}
+
+	.topnav a {
+		display: inline-block;
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+		padding: 1% 1%;
+	}
+
+	.topnav a:hover {
+		color: white;
+		background-color: #95b0db;
+	}	
+}
+	
+@media only screen and (min-width: 600px) {
+	#p{
+		font-size: 60px;
+	}
+	
+}
+
+
